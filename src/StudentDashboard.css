@@ -1,0 +1,123 @@
+/* Base styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container styles */
+.student-dashboard-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  max-height: 90vh; /* Ensure it doesn't overflow the screen height */
+}
+
+/* Header styles */
+.student-dashboard-container h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Question styles */
+.student-dashboard-container h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.student-dashboard-container p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Form styles */
+.student-dashboard-container div {
+  margin-bottom: 1rem;
+}
+
+.student-dashboard-container label {
+  font-size: 1rem;
+  color: #555;
+}
+
+.student-dashboard-container input[type="text"],
+.student-dashboard-container textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Textarea styles */
+.student-dashboard-container textarea {
+  height: 100px; /* Initial height */
+  max-height: 300px; /* Maximum height */
+  resize: vertical; /* Allow vertical resize */
+  overflow: auto; /* Scroll when the max height is reached */
+}
+
+/* Button styles */
+.student-dashboard-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.student-dashboard-container button:hover {
+  background-color: #0056b3;
+}
+
+.student-dashboard-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Option styles */
+.student-dashboard-container input[type="radio"],
+.student-dashboard-container input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Icon styles */
+.speaker-icon {
+  cursor: pointer;
+  margin-left: 8px;
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+}
+
+/* Navigation button styles */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.navigation-buttons button {
+  width: 48%;
+}

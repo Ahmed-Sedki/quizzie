@@ -1,0 +1,145 @@
+/* Base styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Container styles */
+.teacher-dashboard-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 90vh; /* Ensure it doesn't overflow the screen height */
+}
+
+/* Header styles */
+.teacher-dashboard-container h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Navigation bar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.navbar button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #0056b3;
+}
+
+/* Section headers */
+.teacher-dashboard-container h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+}
+
+/* Question styles */
+.teacher-dashboard-container h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.teacher-dashboard-container p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Form styles */
+.teacher-dashboard-container form {
+  margin-top: 1rem;
+}
+
+.teacher-dashboard-container label {
+  font-size: 1rem;
+  color: #555;
+}
+
+.teacher-dashboard-container input[type="text"],
+.teacher-dashboard-container textarea,
+.teacher-dashboard-container select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.teacher-dashboard-container textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.teacher-dashboard-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.teacher-dashboard-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Option styles */
+.teacher-dashboard-container input[type="radio"],
+.teacher-dashboard-container input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.teacher-dashboard-container .option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Select styles */
+.teacher-dashboard-container select {
+  margin-top: 0.5rem;
+}
+
+/* Student answer styles */
+.teacher-dashboard-container .student-answer {
+  margin-left: 1rem;
+  font-style: italic;
+}
